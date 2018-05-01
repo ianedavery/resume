@@ -70,3 +70,32 @@ h4, .location_and_dates p:nth-child(1) {
 .school_info ul {
 	padding-right: 20px;
 }
+
+@media only screen and (min-width: 1024px) {
+	body {
+		padding: 40px 200px 60px 200px;
+	}
+	header {
+		position: relative;
+		padding-left: 10px;
+	}
+	#personal_info {
+		display: inline-block;
+		text-align: left;
+	}
+	#professional_info {
+		position: absolute;
+		top: 0;
+		right: 10px;
+	}
+	h2 {
+		margin-top: 0;
+	}
+	#professional_info li {
+		display: block;
+		text-align: right;
+	}
+	#middle_item:after, #middle_item:before {
+		content: '';
+	}
+}
