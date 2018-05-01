@@ -12,7 +12,11 @@ body {
 	text-align: center;
 }
 
-#personal_info h1, #personal_info p {
+#personal_info h1, 
+#personal_info p,
+h4, 
+.location_and_dates p:nth-child(1),
+#education .school:nth-of-type(2) .school_name p:nth-of-type(1) {
 	margin: 0;
 }
 
@@ -55,10 +59,6 @@ h3	{
 
 h4 {
 	font-weight: 600;
-}
-
-h4, .location_and_dates p:nth-child(1) {
-	margin-bottom: 0;
 }
 
 #experience .job:nth-of-type(2) .job_name h4,
