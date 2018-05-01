@@ -4,7 +4,7 @@
 
 body {
 	font-family: 'Arial', sans-serif;
-	padding: 20px 20px 0 20px;
+	padding: 20px 20px 40px 20px;
 	background-color: #FFFFFF;
 }
 
@@ -17,10 +17,12 @@ body {
 }
 
 #professional_info h2 {
-	margin-bottom: .25em;
+	margin-bottom: 3px;
 }
 
-#professional_info ul {
+#professional_info ul, 
+#skills ul,
+#recent_projects ul {
 	list-style-type: none;
 	padding: 0;
 }
@@ -30,5 +32,41 @@ body {
 }
 
 #middle_item:after, #middle_item:before {
-	content: ' | '
+	content: ' \00B7  ';
+}
+
+h3	{
+	text-align: center;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	margin: 20px 0 20px 0;
+	line-height: 30px;
+}
+
+#summary p, 
+#skills ul,
+#recent_projects ul,
+.job_name, 
+.location_and_dates,
+.school_name,
+.school_date {
+	padding: 0 10px 0 10px;
+}
+
+h4 {
+	font-weight: 600;
+}
+
+h4, .location_and_dates p:nth-child(1) {
+	margin-bottom: 0;
+}
+
+#experience .job:nth-of-type(2) .job_name h4,
+#education .school:nth-of-type(2) .school_name h4 {
+	margin-top: 15px;
+}
+
+.job_description ul,
+.school_info ul {
+	padding-right: 20px;
 }
