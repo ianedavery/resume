@@ -39,11 +39,19 @@ h4,
 	content: ' \00B7  ';
 }
 
+#last_item:before {
+	content: ' \00B7  ';
+}
+
+a:link {
+	text-decoration: none; 
+}
+
 h3	{
 	text-align: center;
 	border-top: 1px solid black;
 	border-bottom: 1px solid black;
-	margin: 20px 0 20px 0;
+	margin: 25px 0 20px 0;
 	line-height: 30px;
 }
 
@@ -96,6 +104,9 @@ h4 {
 		text-align: right;
 	}
 	#middle_item:after, #middle_item:before {
+		content: '';
+	}
+	#last_item:before {
 		content: '';
 	}
 }
